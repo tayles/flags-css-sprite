@@ -3,10 +3,53 @@
 <head>
 	<title>Flags of the World CSS Sprite</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="images/flags.css" rel="stylesheet" type="text/css" />
+	<link href="styles/flags.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+
+		span.flag {
+			display: block;
+			float: left;
+			margin-right: 5px;
+		}
+	
+	</style>
 </head>
 <body>
-	<div class="flag gb" title="United Kingdom">&nbsp;</div>
-	<div class="flag wales" title="Wales">&nbsp;</div>
+	
+	<p>Simple case:</p>
+	
+	<pre>&lt;div class="flag gb"&gt;&amp;nbsp;&lt;/div&gt;
+</pre>
+	
+	<div class="flag gb">&nbsp;</div>
+	
+	<hr />
+	
+	<p>With title tooltip:</p>
+	
+	<pre>&lt;div class=&quot;flag es&quot; title=&quot;Spain&quot;&gt;&amp;nbsp;&lt;/div&gt;</pre>
+	
+	<p><div class="flag es" title="Spain">&nbsp;</div></p>
+	
+	<hr />
+	
+	<p>Within a link:</p>
+	
+	<pre>&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;flag fr&quot; title=&quot;France&quot;&gt;&amp;nbsp;&lt;/span&gt; France&lt;/a&gt;</pre>
+	
+	<p><a href="#"><span class="flag fr" title="France">&nbsp;</span> France</a></p>
+	
+	<hr />
+	
+	<p>Additional flags:</p>
+	
+	<ul>
+		<li><span class="flag catalonia" title="Catalonia">&nbsp;</span> Catalonia</li>
+		<li><span class="flag england" title="England">&nbsp;</span> England</li>
+		<li><span class="flag eu" title="European Union">&nbsp;</span> European Union</li>
+		<li><span class="flag scotland" title="Scotland">&nbsp;</span> Scotland</li>
+		<li><span class="flag wales" title="Wales">&nbsp;</span> Wales</li>
+	</ul>
+	
 </body>
 </html>
